@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+
+        <h1>Kalkultaor</h1>
+
+        <form>
+            Input 1: <input type="number" name="one" id="one"><br>
+            Input 2: <input type="number" name="two" id="two"><br>
+            <button type="button" onclick="regnUt(document.getElementById('one').value, document.getElementById('two').value)">Regn ut</button>
+        </form>
+        
+
+        <script>
+            function regnUt(one,two) {
+                var total = parseInt(one) + parseInt(two); //converting string into integer 
+                 alert("The answer is: " + total);
+                }
+        </script>
+    </body>
+</html>
